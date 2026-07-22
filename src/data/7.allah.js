@@ -8,11 +8,16 @@ const data_path_id = {
 	url2: "/informasi/7.allah/allah/allah/id/",
 };
 
+const data_path_bahasa = {
+	url: "/informasi/7.allah/allah/allah/",
+};
+
 const allah = [
 	{
 		en: {
 			title: "allah",
 			img: [
+				`${data_path_bahasa.url}allah secara bahasa en.PNG`,
 				`${data_path_en.url}link explanation en.png`,
 				`${data_path_en.url2}taha 14 en.PNG`,
 				`${data_path_en.url2}al iklash 1 en.PNG`,
