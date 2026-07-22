@@ -94,29 +94,29 @@
     });
 </script>
 <div class="flex flex-col gap-3 p-4 mb-4">
-    <img src={fixImagePath('/informasi/11.pengampun/an nisa 17 id.PNG')} alt="">
-    <img src={fixImagePath('/informasi/11.pengampun/az zumar 53 id.PNG')} alt="">
+    <img src={fixImagePath('/informasi/11.pengampun/an nisa 17 en.PNG')} alt="">
+    <img src={fixImagePath('/informasi/11.pengampun/az zumar 53 en.PNG')} alt="">
 </div>
-<h1 class="text-xl">1."Seluruh shalatku, ibadahku, cara hidupku, sampai matiku tidak boleh disekutukan dengan apa pun. Ini perintah langsung dari Allah, dan aku (Nabi Muhammad) adalah orang pertama yang melaksanakan dan tunduk pada aturan ini."</h1>
-<h1 class="mt-3 mb-4 text-xl">**tanyakan kepada ustadz atau yang ahli agar tidak tersesat dan untuk cross check saring sebelum sharing</h1>
+<h1 class="text-xl">1."My entire prayer, my acts of worship, and my way of life—even unto my death—must not be associated with anything else. This is a direct command from Allah, and I (Prophet Muhammad) am the first to carry out and submit to this rule."</h1>
+<h1 class="mt-3 mb-4 text-xl">**Consult an *ustadz* or an expert to avoid going astray, and remember to cross-check and filter information before sharing it.</h1>
 {#each datas_information as data_info,idx}
-    <h1>{idx+1} {data_info.id.title}</h1>
-    {#if data_info.id.video}
-        <video src={fixImagePath(data_info.id.video)} controls class="w-full max-w-2xl my-2">
+    <h1>{idx+1} {data_info.en.title}</h1>
+    {#if data_info.en.video}
+        <video src={fixImagePath(data_info.en.video)} controls class="w-full max-w-2xl my-2">
             <track kind="captions" src="" label="No captions available" />
         </video>
     {/if}
-    {#each data_info.id.img as img_data}
-        {#if data_info.id.title =="allah"}
-            <img src={fixImagePath(img_data)} alt={data_info.id.title} class="block w-full h-auto m-2" />
+    {#each data_info.en.img as img_data}
+        {#if data_info.en.title =="allah"}
+            <img src={fixImagePath(img_data)} alt={data_info.en.title} class="block w-full h-auto m-2" />
         {:else}
-            <img src={fixImagePath(img_data)} alt={data_info.id.title} class="block w-full h-auto m-2 md:max-w-xl" />
+            <img src={fixImagePath(img_data)} alt={data_info.en.title} class="block w-full h-auto m-2 md:max-w-xl" />
         {/if}
         
     {/each}
 
     <div>
-        {#each data_info.id.link as data_link}
+        {#each data_info.en.link as data_link}
            <div class="flex gap-3">
                <p>link </p>
                <a href={data_link} target="_blank" rel="noreferrer" class="hover:text-blue-800">
@@ -127,10 +127,10 @@
     </div>
 
     <!-- DOCX Documents - langsung tampil -->
-    {#if data_info.id.docs && data_info.id.docs.length > 0}
+    {#if data_info.en.docs && data_info.en.docs.length > 0}
         <div class="mt-2">
             <p class="font-semibold">📄 Dokumen (DOCX):</p>
-            {#each data_info.id.docs as doc, docIdx}
+            {#each data_info.en.docs as doc, docIdx}
                 <div class="mt-2 ml-4">
                     <p class="text-sm font-medium text-gray-700">{doc.name}</p>
                     <div class="p-3 mt-1 border border-gray-300 rounded bg-gray-50">
@@ -142,10 +142,10 @@
     {/if}
 
     <!-- PDF Documents - langsung tampil -->
-    {#if data_info.id.pdf && data_info.id.pdf.length > 0}
+    {#if data_info.en.pdf && data_info.en.pdf.length > 0}
         <div class="mt-2">
             <p class="font-semibold">📄 Dokumen (PDF):</p>
-            {#each data_info.id.pdf as doc, pdfIdx}
+            {#each data_info.en.pdf as doc, pdfIdx}
                 <div class="mt-2 ml-4">
                     <p class="text-sm font-medium text-gray-700">{doc.name}</p>
                     <div class="p-3 mt-1 border border-gray-300 rounded">

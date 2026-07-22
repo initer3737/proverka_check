@@ -5,7 +5,7 @@ const data_path = {
 const pengakuan = [
 	{
 		en: {
-			title: "pengakuan",
+			title: "confess",
 			img: [
 				`${data_path.url}al mahdi en.PNG`,
 				`${data_path.url}diagnosa dokter sensorav.jpg`,
@@ -15,7 +15,7 @@ const pengakuan = [
 			],
 		},
 		id: {
-			title: "confess",
+			title: "pengakuan",
 			img: [
 				`${data_path.url}al mahdi.PNG`,
 				`${data_path.url}diagnosa dokter sensorav.jpg`

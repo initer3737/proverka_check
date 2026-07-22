@@ -3,11 +3,13 @@
   import Home from "./routes/Home.svelte";
   import About from "./routes/About.svelte";
 import Klarifikasi_id from "./routes/id/Klarifikasi_id.svelte";
+import Klarifikasi_en from "./routes/en/Klarifikasi_en.svelte";
+
   // Definisi mapping route yang rapi
   const routes = {
     "/": Home,
-    "/about": About,
-    "/clarification-id":Klarifikasi_id
+    "/clarification-id":Klarifikasi_id,
+    "/clarification-en":Klarifikasi_en
   };
 </script>
 
