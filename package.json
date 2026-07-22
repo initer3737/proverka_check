@@ -18,6 +18,10 @@
     "vite": "^8.1.1"
   },
   "dependencies": {
+    "mammoth": "^1.12.0",
+    "pdfjs-dist": "^6.1.200",
+    "svelte-pdf": "^2.0.2",
+    "svelte-pdf-viewer": "^1.0.0",
     "svelte-routing": "^2.13.0",
     "svelte-spa-router": "^5.1.1"
   }

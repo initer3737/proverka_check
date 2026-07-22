@@ -2,16 +2,17 @@
   import Router from "svelte-spa-router";
   import Home from "./routes/Home.svelte";
   import About from "./routes/About.svelte";
-
+import Klarifikasi_id from "./routes/id/Klarifikasi_id.svelte";
   // Definisi mapping route yang rapi
   const routes = {
     "/": Home,
-    "/about": About
+    "/about": About,
+    "/clarification-id":Klarifikasi_id
   };
 </script>
 
 <!-- Navigation Bar menggunakan tag anchor biasa dengan '#' -->
-<nav class="p-4 flex gap-4 ">
+<nav class="flex gap-4 p-4 ">
   {#each Object.keys(routes) as route }
     <a href="#{route}" class="hover:text-blue-400">{route=="/"?"home":route.replace("/","")}</a>
   {/each}
