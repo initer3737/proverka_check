@@ -32,6 +32,7 @@ const allah = [
 		id: {
 			title: "allah",
 			img: [
+				`${data_path_bahasa.url}allah secara bahasa id.PNG`,
 				`${data_path_id.url}link explanation id.png`,
 				`${data_path_id.url2}taha 14 id.PNG`,
 				`${data_path_id.url2}al iklash 1 id.PNG`,
