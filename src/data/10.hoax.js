@@ -34,7 +34,8 @@ const hoax = [
 					file: `${data_path.url}documents/documents/english/clarification_document_advanced (1) (1).pdf english.pdf`,
 				},
 			],
-			video:`${data_path.url}bibi manipulated sensorav.mp4`
+			video: `${data_path.url}bibi manipulated sensorav.mp4`,
+			link_download: "https://drive.google.com/file/d/1tRZgx0kt6yMELdb5Q5mwwyS9qwB2fw8_/view?usp=drive_link",
 		},
 		id: {
 			title: "Hoax No.9 - Analisis & Klarifikasi Netanyahu",
@@ -66,7 +67,8 @@ const hoax = [
 					file: `${data_path.url}documents/documents/indonesian/clarification_document_advanced 1 indonesian.pdf`,
 				},
 			],
-			video:`${data_path.url}bibi manipulated sensorav.mp4`
+			video: `${data_path.url}bibi manipulated sensorav.mp4`,
+			link_download: "https://drive.google.com/file/d/1tRZgx0kt6yMELdb5Q5mwwyS9qwB2fw8_/view?usp=drive_link",
 		},
 	},
 ];

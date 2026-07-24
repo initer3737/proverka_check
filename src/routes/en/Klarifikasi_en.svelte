@@ -105,6 +105,7 @@
         <video src={fixImagePath(data_info.en.video)} controls class="w-full max-w-2xl my-2">
             <track kind="captions" src="" label="No captions available" />
         </video>
+        <a href={data_info.en.link_download} target="_blank" rel="noreferrer" class="inline-block px-4 py-2 mt-2 text-white bg-blue-600 rounded hover:bg-blue-700">download secret information</a>
     {/if}
     {#each data_info.en.img as img_data}
         {#if data_info.en.title =="allah"}
